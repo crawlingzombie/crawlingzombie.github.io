@@ -6,7 +6,7 @@ header{
     background: #1C6EA4;
     background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
     background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
-    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: linear-gradient(to right, #3b77a0 0%, #2388CB 50%, #144E75 100%);
     height: 270px;
     width: 100%;
    
@@ -38,7 +38,7 @@ h1, h2, h3{
 }
 
 #titulos{ 
-    position: fixed;   
+    position: absolute;
     margin-left: 50%;  
     margin-top: 10px;  
 }
@@ -60,7 +60,7 @@ margin-bottom: 1px;
     margin-bottom: 1px;
 }
 
-#textoTitulo{
+#textoTitulo  {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-size: 15px;
@@ -72,7 +72,7 @@ margin-bottom: 1px;
     background-color: aqua;
     width: 100%;
     height: 100px;
-    position: fixed;
+    position: static;
     z-index: 100%;
     
 }
@@ -85,7 +85,7 @@ nav {
 
 nav button {
     list-style: none;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 nav  button {
@@ -112,9 +112,49 @@ button {
     background-color: #25a0b1;
 }
 
+body {
+    position: absolute;
+    background-color: bisque;
+    width: 100%;
+    height: 800px;
+    
+}
+
+
+#sectionSobreMi #sectionEducacion #sectionExperiencia #sectionContacto {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    width: 80%;
+    margin-left: 10%;
+    position: static;
+
+}
+
+.videoPortfolio {
+   overflow: auto;
+   float: left;
+   width: 50%;
+
+   
+}
+
+#video {
+    display: block;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.titulos {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
 
 @media (max-width: 800px) {
   nav button #menu  {
     display: none;
   }
 }
+
